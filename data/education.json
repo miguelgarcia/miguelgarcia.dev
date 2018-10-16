@@ -1,0 +1,19 @@
+{
+	"title" : "Education",
+	"education" : [
+		{
+			"title" : "Licentiate in Computer Science",
+            "description" : "Equivalent to Master degree in USA: 6 years plus thesis. GPA: 8.5/10",
+            "notes": "Universidad de Buenos Aires",
+            "year": "2016"
+            
+		}
+	],
+	"courses": [
+		{
+			"title": "Scrum: The Basics",
+			"date": "Oct 2018",
+			"entity": "Linkedin Learning"
+		}
+	]
+}

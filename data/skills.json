@@ -1,0 +1,12 @@
+{
+	"title" : "Main Skills",
+	"skills" : {
+		"Python" : "100",
+		"PHP" : "80",
+		"Docker" : "80",
+		"React" : "80",
+		"SQL" : "100",
+		"Scrum" : "100",
+		"Linux" : "90"
+	}
+}

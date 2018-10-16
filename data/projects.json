@@ -1,0 +1,20 @@
+{
+	"title" : " Side Projects",
+	"projects" : [
+		{
+			"title" : "neural-network-py",
+			"description" : "Configurable multilayer perceptron that can be trained and executed developed from scratch in Python3 + Numpy.",
+			"site": "https://github.com/miguelgarcia/neural-network-py"
+		},
+		{
+			"title" : "example-shop-py",
+			"description" : "Example REST API implemented using Flask, SQLAlchemy, Marshmallow, factoryboy, pytest and CircleCI.",
+			"site": "https://github.com/miguelgarcia/example-shop-py"
+		},
+		{
+			"title" : "IMDB Scraping",
+			"description" : "Extract movies and actors information from imdb.com to a Mongo database using Scrapy.",
+			"site": "https://github.com/miguelgarcia/imdb_scraping"
+		}
+	]
+}

@@ -1,12 +1,13 @@
 {
-	"title" : "Main Skills",
-	"skills" : {
-		"Python" : "100",
-		"PHP" : "80",
-		"Docker" : "80",
-		"React" : "80",
-		"SQL" : "100",
-		"Scrum" : "100",
-		"Linux" : "90"
-	}
+    "title": "Main Skills",
+    "skills": [
+        { "name": "Python", "level": 100 },
+        { "name": "Javascript", "level": 100 },
+        { "name": "C/C++", "level": 70 },
+        { "name": "Go", "level": 30 },
+        { "name": "Docker", "level": 80 },
+        { "name": "SQL", "level": 100 },
+        { "name": "Scrum", "level": 100 },
+        { "name": "Linux", "level": 100 }
+    ]
 }

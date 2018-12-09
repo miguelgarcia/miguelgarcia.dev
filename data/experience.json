@@ -1,47 +1,46 @@
 {
-	"title" : "Experience",
-	"experience" : [
-		{
-			"timeperiod" : "Jan 2017 - Now",
-			"company" : "software developer",
-			"role": "freelancer",
-			"description" : "Development of web applications for medium sized companies and organizations."
-		},
-		{
-			"timeperiod" : "Apr 2017 - Now",
-			"company" : "ENACOM (Argentinian government)",
-			"role": "IT Consultant",
-			"description" : "Design and implementation of the web platform used for the reception of information from telecommunication providers."
-		},
-		{
-			"timeperiod" : "2015 - 2017",
-			"company" : "Enjambre Bit",
-			"role": "Co-founder / fullstack developer",
-			"description" : "Enjambre Bit is a custom software development firm founded by me and three colleagues on 2015. I departed Enjambre on 2017 to focus on other projects."
-		},
-		{
-			"timeperiod" : "2012 - 2015",
-			"company" : "Conectar Igualdad: Huayra Linux",
-			"role": "Linux developer",
-			"description" : "Huayra GNU/Linux is a Debian based Linux distro built for laptops supplied to each high school student in Argentina from 2010 to 2015. My tasks included: Desktop applications development, customization of applications, kernel drivers testing and packaging and DEB packages maintenance"
-		},
-		{
-			"timeperiod" : "2012 - 2015",
-			"company" : "PressEnter Coop.",
-			"role": "Co-founder / software developer",
-			"description" : "PressEnter was a custom software development firm with focus on open source technlogies."
-		},
-		{
-			"timeperiod" : "2008 - 2012",
-			"company" : "Education Ministry, Buenos Aires City",
-			"role": "PHP developer",
-			"description" : "Development web applications to manage students inscriptions, grades and teachers information"
-		},
-		{
-			"timeperiod" : "2004 - 2008",
-			"company" : "Sociedad Hebraica Argentina",
-			"role": "PHP developer",
-			"description" : "Development of an ecosystem of applications for the society internal administration."
-		}
-	]
+    "title": "Experience",
+    "experience": [{
+            "timeperiod": "Jan 2017 - Now",
+            "company": "software developer",
+            "role": "freelancer",
+            "description": "Development of web applications for medium sized companies and organizations using Python, React, SQL and NoSQL databases."
+        },
+        {
+            "timeperiod": "Apr 2017 - Now",
+            "company": "ENACOM (Argentinian government)",
+            "role": "IT Consultant",
+            "description": "Design and implementation of a web platform for the reception of information from telecommunication providers using Python, PostgreSQL, AMQP, Docker and Bonita BPMs."
+        },
+        {
+            "timeperiod": "2015 - 2017",
+            "company": "Enjambre Bit",
+            "role": "Co-founder / fullstack developer",
+            "description": "Enjambre Bit is a custom software development firm founded by me and three colleagues on 2015. I departed Enjambre on 2017 to focus on other projects."
+        },
+        {
+            "timeperiod": "2012 - 2015",
+            "company": "Conectar Igualdad: Huayra Linux",
+            "role": "Linux developer",
+            "description": "Huayra GNU/Linux is a Debian based Linux distro built for laptops supplied to each high school student in Argentina from 2010 to 2015. My tasks included: Desktop applications development, customization of applications, kernel drivers testing and packaging and DEB packages maintenance"
+        },
+        {
+            "timeperiod": "2012 - 2015",
+            "company": "PressEnter Coop.",
+            "role": "Co-founder / software developer",
+            "description": "PressEnter was a custom software development firm with focus on open source technlogies."
+        },
+        {
+            "timeperiod": "2008 - 2012",
+            "company": "Education Ministry, Buenos Aires City",
+            "role": "PHP developer",
+            "description": "Development web applications to manage students inscriptions, grades and teachers information"
+        },
+        {
+            "timeperiod": "2004 - 2008",
+            "company": "Sociedad Hebraica Argentina",
+            "role": "PHP developer",
+            "description": "Development of an ecosystem of applications for the society internal administration."
+        }
+    ]
 }

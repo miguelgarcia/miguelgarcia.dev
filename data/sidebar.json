@@ -1,6 +1,6 @@
 {
-	"title" : "hello, I'm",
-	"highlightedText" : "Miguel Garcia",
-	"description" : "MSc in Computer Science graduated on 2016, but I’ve been working as software developer and IT consultant since 2004. I like building things using open source technologies. I'm based in Buenos Aires, Argentina.",
-	"displayPicture" : "sim.jpg"
+    "title": "hello, I'm",
+    "highlightedText": "Miguel Garcia",
+    "description": "MSc in Computer Science graduated on 2016.<br /> I’ve been interested in computers and technology since I was a kid and I've been working as a software developer and IT consultant since 2004. I like building things using open source technologies. I'm based in Buenos Aires, Argentina.",
+    "displayPicture": "sim.jpg"
 }

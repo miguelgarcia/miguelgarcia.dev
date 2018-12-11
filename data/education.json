@@ -2,7 +2,7 @@
     "title": "Education",
     "education": [{
         "title": "Licentiate in Computer Science",
-        "description": "Equivalent to Master degree in USA: 6 years plus thesis. GPA: 8.5/10.<br/><br/> <b>Thesis:</b> <i>\"Techniques and methodologies for implementing vision system on All Programmable SoCs using high level synthesis\"</i> <a href=\"https://github.com/miguelgarcia/tesis-apsoc\" target=\"_blank\">View</a><br/>The thesis received these awards:<ul class=\"text-muted bs\"><li>1st award at the JAIIO45 \"Students Thesis Contest\"</li><li> 1st mention by CESSI (Argentina Software industry companies organizations) at the JAIIO45</li></ul>",
+        "description": "Equivalent to Master degree in USA: 6 years plus thesis. GPA: 8.5/10.<br/><br/> <b>Thesis:</b> <i>\"Techniques and methodologies for vision systems implementation on All Programmable SoCs using High Level Synthesis\"</i> <a href=\"https://github.com/miguelgarcia/tesis-apsoc\" target=\"_blank\">View</a><br/>The thesis received these awards:<ul class=\"text-muted bs\"><li>1st award at the JAIIO45 \"Students Thesis Contest\"</li><li> 1st mention by CESSI (Argentina Software industry companies organizations) at the JAIIO45</li></ul>",
         "notes": "Universidad de Buenos Aires",
         "year": "2016"
 

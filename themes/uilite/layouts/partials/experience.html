@@ -9,9 +9,23 @@
 
             <div class="timeline-content {{ if eq (mod $index 2) 0 }} right {{ end }}">
                 <span class="date">{{ $element.timeperiod }}</span>
-                <h6 class="h3 my-2">{{ $element.company }}</h6>
-                <h6 class="my-2">{{ $element.role }}</h6>
-                <p class="">{{ $element.description }}</p>
+                <div style="text-align: left">
+                    <h6 class="h3 my-2">{{ $element.company }}</h6>
+                    <h6 class="my-2">{{ $element.role }}</h6>
+
+                    <p>{{ $element.description }}</p>
+                    <b>Tech stack:</b>
+                    <ul class="list-inline small">
+
+                        {{ range $tindex, $tech := $element.tech }}
+                        <li class="list-inline-item">
+
+                            {{ if $tech.icon }}
+                            <i class="fab fa-{{ $tech.icon }}"></i> {{ end }} {{ $tech.name }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
             </div>
         </div>
         {{ end }}

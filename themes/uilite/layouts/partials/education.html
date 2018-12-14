@@ -29,6 +29,9 @@
                 <h5 class="">{{ $element.title }}</h5>
                 <h6 class="text-muted">{{ $element.entity }}</h6>
                 <p class="text-muted">{{ $element.date }}</p>
+                {{ if $element.url }}
+                <a href="{{ $element.url }}" target="_blank">View
+                </a> {{ end }}
             </div>
         </div>
 

@@ -15,7 +15,8 @@
         {
             "title": "Learn DevOps: The Complete Kubernetes Course",
             "date": "Oct 2018",
-            "entity": "Udemy"
+            "entity": "Udemy",
+            "url": "https://www.udemy.com/learn-devops-the-complete-kubernetes-course"
         },
         {
             "title": "Learning Go",

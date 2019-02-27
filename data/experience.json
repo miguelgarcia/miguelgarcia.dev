@@ -1,7 +1,22 @@
 {
     "title": "Experience",
     "experience": [{
-            "timeperiod": "Jan 2017 - Now",
+            "timeperiod": "Jan 2019 - Now",
+            "company": "flugel.it",
+            "website": "https://flugel.it",
+            "role": "Software Engineer / DevOps",
+            "description": "Development of tools around the Kubernetes ecosystem, like custom operators, helm packages, and command line tools using Go and Python.",
+            "tech": [
+                { "icon": "python", "name": "Python" },
+                { "icon": "go", "name": "Golang" },
+                { "icon": "kubernetes", "name": "Kubernetes" },
+                { "icon": "docker", "name": "Docker" },
+                { "icon": "git", "name": "Git" },
+                { "icon": "terraform", "name": "Terraform" }
+            ]
+        },
+        {
+            "timeperiod": "Jan 2017 - Dec 2018",
             "company": "software developer",
             "role": "freelancer",
             "description": "Development of web applications for medium sized companies and organizations.",

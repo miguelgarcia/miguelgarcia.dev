@@ -13,7 +13,11 @@
                     <h6 class="h3 my-2">{{ $element.company }}</h6>
                     <h6 class="my-2">{{ $element.role }}</h6>
 
-                    <p>{{ $element.description }}</p>
+                    <p>{{ $element.description }}
+                    {{ if $element.website }}
+                        <a href="{{ $element.website }}" class="small" target="_blank">View company website</a>
+                    {{ end }}
+                    </p>
                     <b>Tech stack:</b>
                     <ul class="list-inline small">
 

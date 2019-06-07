@@ -5,7 +5,7 @@ orbs:
     executors:
       specialthingsexecutor:
         docker:
-          - image: circleci/alpine:3.7
+          - image: alpine:3.7
     commands:
       dospecialthings:
         steps:

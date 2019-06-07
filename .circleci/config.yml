@@ -24,6 +24,7 @@ orbs:
             name: Check My IP
             command: |
               apk add curl
+              echo Hola
           - when:
             name: Run work steps.
             condition: << parameters.work_steps >>
@@ -34,9 +35,3 @@ workflows:
   main:
     jobs:
       - my-orb/myjob
-        work_steps:
-          - run:
-            name: Work steps
-            command: |
-              curl http:/ifconfig.co
-              echo hola

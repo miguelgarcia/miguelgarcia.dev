@@ -13,6 +13,11 @@ orbs:
     jobs:
       myjob:
         executor: specialthingsexecutor
+        parameters:
+          extra_steps:
+            description: Extra steps to execute
+            type: steps
+            default: []
         steps:
           - dospecialthings
 

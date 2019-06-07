@@ -25,11 +25,12 @@ jobs:
 
 workflows:
   version: 2.1
-  default-workflow:
+  develop-deployment:
     jobs:
       - build:
           filters:
-            branches:
-              only: master
+            tags:
+              ignore: /.*/
       - another-job:
-          requires: build
+          requires:
+            - build

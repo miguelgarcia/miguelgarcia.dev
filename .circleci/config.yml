@@ -3,33 +3,18 @@ version: 2.1
 orbs:
   my-orb:
     executors:
-      myexecutor:
+      specialthingsexecutor:
         docker:
-          - image: alpine:3.7
+          - image: circleci/alpine:3.7
+    commands:
+      dospecialthings:
+        steps:
+          - run: echo "We will now do special things"
     jobs:
       myjob:
-        description: an orb job
-        executor: myexecutor
-        parameters:
-          something:
-            description: For example a key
-            type: string
-            default: BLABLA
-          work_steps:
-            description: Steps to execute
-            type: steps
-            default: []
+        executor: specialthingsexecutor
         steps:
-          - run:
-            name: Check My IP
-            command: |
-              apk add curl
-              echo Hola
-          - when:
-            name: Run work steps.
-            condition: << parameters.work_steps >>
-            steps: << parameters.work_steps >>
-
+          - dospecialthings
 
 workflows:
   main:

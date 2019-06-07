@@ -4,8 +4,21 @@ jobs:
    docker:
      - image: alpine:3.7
    steps:
-     - checkout
      - run:
          name: Check My IP
          command: |
+           apk add curl
+           curl https://ifconfig.co
+     - run:
+         name: Check My IP Second time
+         command: |
+           curl https://ifconfig.co
+ anotherJob:
+   docker:
+     - image: alpine:3.7
+   steps:
+     - run:
+         name: Check My IP From another job
+         command: |
+           apk add curl
            curl https://ifconfig.co

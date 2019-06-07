@@ -13,7 +13,7 @@ jobs:
          name: Check My IP Second time
          command: |
            curl https://ifconfig.co
- anotherJob:
+ another-job:
    docker:
      - image: alpine:3.7
    steps:
@@ -22,3 +22,14 @@ jobs:
          command: |
            apk add curl
            curl https://ifconfig.co
+
+workflows:
+  version: 2.1
+  default-workflow:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+      - another-job:
+          requires: build

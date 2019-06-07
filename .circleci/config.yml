@@ -25,3 +25,5 @@ workflows:
   main:
     jobs:
       - my-orb/myjob
+        extra_steps:
+          - run: echo "I'm an extra step"

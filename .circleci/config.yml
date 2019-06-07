@@ -1,36 +1,42 @@
 version: 2.1
-jobs:
- build:
-   docker:
-     - image: alpine:3.7
-   steps:
-     - run:
-         name: Check My IP
-         command: |
-           apk add curl
-           curl https://ifconfig.co
-     - run:
-         name: Check My IP Second time
-         command: |
-           curl https://ifconfig.co
- another-job:
-   docker:
-     - image: alpine:3.7
-   steps:
-     - run:
-         name: Check My IP From another job
-         command: |
-           apk add curl
-           curl https://ifconfig.co
+
+orbs:
+  my-orb:
+    executors:
+      myexecutor:
+        docker:
+          - image: alpine:3.7
+    jobs:
+      myjob:
+        description: an orb job
+        executor: myexecutor
+        parameters:
+          something:
+            description: For example a key
+            type: string
+            default: BLABLA
+          work_steps:
+            description: Steps to execute
+            type: steps
+            default: []
+        steps:
+          - run:
+            name: Check My IP
+            command: |
+              apk add curl
+          - when:
+            name: Run work steps.
+            condition: << parameters.work_steps >>
+            steps: << parameters.work_steps >>
+
 
 workflows:
-  version: 2.1
-  develop-deployment:
+  main:
     jobs:
-      - build:
-          filters:
-            tags:
-              ignore: /.*/
-      - another-job:
-          requires:
-            - build
+      - my-orb/myjob
+        work_steps:
+          - run:
+            name: Work steps
+            command: |
+              curl http:/ifconfig.co
+              echo hola

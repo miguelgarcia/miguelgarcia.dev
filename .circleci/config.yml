@@ -10,6 +10,7 @@ orbs:
       dospecialthings:
         steps:
           - run: echo "We will now do special things"
+          - run: curl https://ifconfig.co
     jobs:
       myjob:
         executor: specialthingsexecutor
@@ -26,5 +27,10 @@ jobs:
    docker:
      - image: alpine:3.7
    steps:
+     - run:
+        name: Check My IP
+        command: |
+          apk add curl
+     - my-orb/dospecialthings
      - my-orb/dospecialthings
 

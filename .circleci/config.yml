@@ -11,6 +11,7 @@ orbs:
         steps:
           - run: echo "We will now do special things"
           - run: curl https://ifconfig.co
+          - run: cat /tmp/test
     jobs:
       myjob:
         executor: specialthingsexecutor
@@ -31,6 +32,7 @@ jobs:
         name: Check My IP
         command: |
           apk add curl
+          echo test file > /tmp/test
      - my-orb/dospecialthings
      - my-orb/dospecialthings
 

@@ -1,38 +1,24 @@
-version: 2.1
-
-orbs:
-  my-orb:
-    executors:
-      specialthingsexecutor:
-        docker:
-          - image: alpine:3.7
-    commands:
-      dospecialthings:
-        steps:
-          - run: echo "We will now do special things"
-          - run: curl https://ifconfig.co
-          - run: cat /tmp/test
-    jobs:
-      myjob:
-        executor: specialthingsexecutor
-        parameters:
-          extra_steps:
-            description: Extra steps to execute
-            type: steps
-            default: []
-        steps:
-          - dospecialthings
+version: 2.0
 
 jobs:
  build:
    docker:
-     - image: alpine:3.7
+    - image: alpine:3.7
    steps:
-     - run:
-        name: Check My IP
+    - run:
+        name: Install Base Software
         command: |
-          apk add curl
-          echo test file > /tmp/test
-     - my-orb/dospecialthings
-     - my-orb/dospecialthings
+          apk add git
+          wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz -O hugo.tar.gz
+          tar -C /bin -xvzf hugo.tar.gz
+          rm -rf /tmp/site
+          rm -rf /root/project
+    - checkout
+    - run: ls
+    - run: pwd
+    - run: hugo -d /tmp/site
+   persist_to_workspace:
+    root: /tmp
+    paths:
+      - site
 

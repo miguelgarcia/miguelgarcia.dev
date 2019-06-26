@@ -1,26 +1,29 @@
 version: 2.1
+
 jobs:
- build:
-   docker:
-    - image: circleci/python:3.7
-   steps:
-    - run:
-        name: Install Base Software
-        command: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz -O /tmp/hugo.tar.gz
-          tar -C /tmp -xvzf /tmp/hugo.tar.gz
-    - checkout
-    - run:
-        name: Build site
-        command: /tmp/hugo -d /tmp/public
-    - persist_to_workspace:
-        root: /tmp
-        paths:
-          - public
+  build:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - run:
+          name: Install Base Software
+          command: |
+            wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz -O /tmp/hugo.tar.gz
+            tar -C /tmp -xvzf /tmp/hugo.tar.gz
+      - checkout
+      - run:
+          name: Build site
+          command: /tmp/hugo -d /tmp/public
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - public
   deploy:
     docker:
       - image: circleci/python:3.7
     steps:
+      - attach_workspace:
+          at: /tmp
       - run:
           name: Install Base Software
           command: |
@@ -31,10 +34,9 @@ jobs:
             ls /tmp
             export PATH=$PATH:/home/circleci/.local/bin
             aws s3 sync /tmp/public s3://miguelgarcia.dev-site
-      - attach_workspace:
-        at: /tmp
 
 workflows:
+  version: 2.1
   default:
     triggers:
     jobs:

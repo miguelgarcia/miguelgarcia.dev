@@ -4,7 +4,7 @@
             "timeperiod": "Jan 2019 - Now",
             "company": "flugel.it",
             "website": "https://flugel.it",
-            "role": "Software Engineer / DevOps",
+            "role": "Solutions Architect / DevOps",
             "description": "Development of tools around the Kubernetes ecosystem, like custom operators, helm packages, and command line tools using Go and Python.",
             "tech": [
                 { "icon": "python", "name": "Python" },

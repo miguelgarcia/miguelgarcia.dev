@@ -13,17 +13,17 @@ jobs:
       - checkout
       - run:
           name: Build site
-          command: /tmp/hugo -d /tmp/public
+          command: /tmp/hugo
       - persist_to_workspace:
-          root: /tmp
+          root: .
           paths:
-            - public
+            - public/
   deploy:
     docker:
       - image: circleci/python:3.7
     steps:
       - attach_workspace:
-          at: /tmp
+          at: /tmp/workspace
       - run:
           name: Install Base Software
           command: |
@@ -31,9 +31,8 @@ jobs:
       - run:
           name: Deploy
           command: |
-            ls /tmp
             export PATH=$PATH:/home/circleci/.local/bin
-            aws s3 sync /tmp/public s3://miguelgarcia.dev-site
+            aws s3 sync /tmp/workspace/public s3://miguelgarcia.dev-site
 
 workflows:
   version: 2.1
@@ -42,6 +41,8 @@ workflows:
     jobs:
       - build
       - deploy:
+          requires:
+            - build
           filters:
             branches:
               only:

@@ -1,11 +1,11 @@
 {
-    "title": "Experience",
+    "title": "Professional Experience",
     "experience": [{
             "timeperiod": "Jan 2019 - Now",
             "company": "flugel.it",
             "website": "https://flugel.it",
             "role": "Solutions Architect / DevOps",
-            "description": "Development of tools around the Kubernetes ecosystem, like custom operators, helm packages, and command line tools using Go and Python.",
+            "description": "Help customers to embrace DevOps practices and tools. Design and maintain Infrastructure as Code solutions that use Kubernetes, CI/CD and different cloud platforms (such as AWS, GCP and Alibaba Cloud)",
             "tech": [
                 { "icon": "python", "name": "Python" },
                 { "icon": "go", "name": "Golang" },
@@ -13,6 +13,32 @@
                 { "icon": "docker", "name": "Docker" },
                 { "icon": "git", "name": "Git" },
                 { "icon": "terraform", "name": "Terraform" }
+            ]
+        },
+        {
+            "timeperiod": "Jun 2019 - Now",
+            "company": "Real Python",
+            "website": "https://realpython.com",
+            "role": "Author",
+            "description": "Research and write articles about Python and relevant topics",
+            "tech": [
+                { "icon": "python", "name": "Python" }
+            ]
+        },
+        {
+            "timeperiod": "Apr 2017 - Jan 2019",
+            "company": "ENACOM (Argentinian government)",
+            "role": "IT Consultant",
+            "description": "Design and implementation of a web platform for the reception of information from telecommunication providers.",
+            "tech": [
+                { "icon": "python", "name": "Python" },
+                { "icon": "js", "name": "JS" },
+                { "icon": "docker", "name": "Docker" },
+                { "icon": "git", "name": "Git" },
+                { "icon": "", "name": "AMQP" },
+                { "icon": "", "name": "Bonita BPMS" },
+                { "icon": "", "name": "MongoDB" },
+                { "icon": "", "name": "PostgreSQL" }
             ]
         },
         {
@@ -28,22 +54,6 @@
                 { "icon": "", "name": "PostgreSQL" },
                 { "icon": "", "name": "MongoDB" },
                 { "icon": "", "name": "AMQP" }
-            ]
-        },
-        {
-            "timeperiod": "Apr 2017 - Now",
-            "company": "ENACOM (Argentinian government)",
-            "role": "IT Consultant",
-            "description": "Design and implementation of a web platform for the reception of information from telecommunication providers.",
-            "tech": [
-                { "icon": "python", "name": "Python" },
-                { "icon": "js", "name": "JS" },
-                { "icon": "docker", "name": "Docker" },
-                { "icon": "git", "name": "Git" },
-                { "icon": "", "name": "AMQP" },
-                { "icon": "", "name": "Bonita BPMS" },
-                { "icon": "", "name": "MongoDB" },
-                { "icon": "", "name": "PostgreSQL" }
             ]
         },
         {

@@ -3,8 +3,8 @@
     "skills": [
         { "name": "Python", "level": 100, "icon": "python" },
         { "name": "Javascript", "level": 100, "icon": "js" },
-        { "name": "C/C++", "level": 70 },
-        { "name": "Go", "level": 30 },
+        { "name": "Go", "level": 50 },
+        { "name": "Kubernetes", "level": 80 },
         { "name": "Docker", "level": 80, "icon": "docker" },
         { "name": "SQL", "level": 100 },
         { "name": "Scrum", "level": 100 },

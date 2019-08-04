@@ -1,0 +1,40 @@
+{
+    "title": " Publications",
+    "publications": [{
+            "title": "How to Make a Twitter Bot in Python With Tweepy",
+            "image": "https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/How-to-Make-a-Twitter-Bot-in-Python-with-Tweepy_Watermarked.e0e3b3e8f6ce.jpg&w=480&sig=397be9ee7db9165f56c4a4e3e6e23df0f2e5e9ae",
+            "url": "https://realpython.com/twitter-bot-python-tweepy/",
+            "entity": "Real Python"
+        },
+        {
+            "title": "Building Kubernetes Operators part 1: Operator Pattern and Concepts",
+            "url": "https://flugel.it/building-kubernetes-operators-part-1-operator-pattern-and-concepts/",
+            "entity": "flugel.it"
+        },
+        {
+            "title": "Building Kubernetes Operators part 2: Design and implementation details",
+            "url": "https://flugel.it/building-kubernetes-operators-part-2/",
+            "entity": "flugel.it"
+        },
+        {
+            "title": "Building Custom Kubernetes Operators Part 3: Building Operators in Go using Operator SDK",
+            "url": "https://flugel.it/building-custom-kubernetes-operators-part-3-building-operators-in-go-using-operator-sdk/",
+            "entity": "flugel.it"
+        },
+        {
+            "title": "Building Custom Kubernetes Operators Article Part 4: Automatic testing using Operator SDK",
+            "url": "https://flugel.it/building-custom-kubernetes-operators-article-iv-automatic-testing-using-operator-sdk/",
+            "entity": "flugel.it"
+        },
+        {
+            "title": "Building Custom Kubernetes Operators Part 5: Building Operators in Python",
+            "url": "https://flugel.it/building-custom-kubernetes-operators-part-5-building-operators-in-python/",
+            "entity": "flugel.it"
+        },
+        {
+            "title": "Building Custom Kubernetes Operators Part 6: Building Operators using Metacontroller",
+            "url": "https://flugel.it/building-custom-kubernetes-operators-part-6-building-operators-using-metacontroller/",
+            "entity": "flugel.it"
+        }
+    ]
+}

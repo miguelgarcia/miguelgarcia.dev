@@ -7,6 +7,12 @@
             "entity": "Real Python"
         },
         {
+            "title": "Use a Flask Blueprint to Architect Your Applications",
+            "image": "https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/What-Can-You-Do-With-Flask-Blueprints_Watermarked.faba402ad037.jpg&w=480&sig=ac51098c9f299915e84ec5fb8416983a382c7bca",
+            "url": "https://realpython.com/flask-blueprint/",
+            "entity": "Real Python"
+        },
+        {
             "title": "Building Kubernetes Operators part 1: Operator Pattern and Concepts",
             "url": "https://flugel.it/building-kubernetes-operators-part-1-operator-pattern-and-concepts/",
             "entity": "flugel.it"

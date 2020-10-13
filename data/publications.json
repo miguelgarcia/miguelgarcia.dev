@@ -7,6 +7,12 @@
             "entity": "Real Python"
         },
         {
+            "title": "Using ggplot in Python: Visualizing Data With plotnine",
+            "image": "https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/Data-Visualization-with-ggplot_Watermarked.55f8b3eb75d8.jpg&w=480&sig=a2d8b1fae67b3974f027ffdb060e67a0270e81c6",
+            "url": "https://realpython.com/ggplot-python/",
+            "entity": "Real Python"
+        },
+        {
             "title": "Use a Flask Blueprint to Architect Your Applications",
             "image": "https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/What-Can-You-Do-With-Flask-Blueprints_Watermarked.faba402ad037.jpg&w=480&sig=ac51098c9f299915e84ec5fb8416983a382c7bca",
             "url": "https://realpython.com/flask-blueprint/",

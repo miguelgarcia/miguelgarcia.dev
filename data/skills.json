@@ -2,7 +2,7 @@
     "title": "Main Skills",
     "skills": [
         { "name": "Python", "level": 100, "icon": "python" },
-        { "name": "Javascript/Node", "level": 100, "icon": "js" },
+        { "name": "Javascript / Node / React", "level": 100, "icon": "js" },
         { "name": "Go", "level": 50 },
         { "name": "Kubernetes", "level": 80 },
         { "name": "Docker", "level": 80, "icon": "docker" },

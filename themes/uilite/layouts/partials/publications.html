@@ -1,6 +1,6 @@
 {{ $publications := .Site.Data.publications }}
 
-<section class="green">
+<section class="skin">
   <h2 class="heading">{{ $publications.title }}</h2>
 
   <div class="row justify-content-md-center">
@@ -15,7 +15,7 @@
         {{ if $element.image }}
             <img src="{{ $element.image }}" style="margin: 2px" /><br/>
         {{ end }}
-        <a href="{{ $element.url}}" target="_blank">View</a>
+        <a href="{{ $element.url}}" target="_blank">Read</a>
       </div>
     </div>
 

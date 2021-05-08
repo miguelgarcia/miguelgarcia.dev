@@ -240,7 +240,7 @@ section.green {
 }
 
 section.skin {
-    background-color: #fdead2;
+    background-color: #e0dbdb;
 }
 
 section.aqua {
@@ -347,7 +347,7 @@ section.pink {
     margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 650px) {
     .sidebar {
         position: static;
         width: 100%;

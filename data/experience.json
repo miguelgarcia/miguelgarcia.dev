@@ -5,7 +5,7 @@
             "timeperiod": "Dec 2019 - Now",
             "company": "inOrbit.ai",
             "website": "https://inorbit.ai",
-            "role": "Software Engineer",
+            "role": "Lead Software Engineer",
             "description": "InOrbit is the leading provider of SaaS RobOps - DevOps for robotics.",
             "tech": [
                 { "icon": "python", "name": "Python" },
